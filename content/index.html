@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>Sample Scala.js Application</title>
+</head>
+<body>
+<h2>Sample Usage of Scala.js, Spray, uPickle, and Autowire</h2>
+<div>
+    <label for="reverseInput">Reverse Service:</label>
+    <input id="reverseInput"/>
+    <input id="reversed" readonly="readonly"/>
+</div>
+<div>
+    <label for="history">History Service:</label>
+    <textarea id="history">No History Loaded</textarea>
+    <button id="loadHistoryButton">Load History</button>
+</div>
+
+<script type="text/javascript" src="app/sample-client-jsdeps.js"></script>
+<script type="text/javascript" src="app/sample-client-fastopt.js"></script>
+<script type="text/javascript">
+    com.outr.sample.client.Client().main();
+</script>
+</body>
+</html>
