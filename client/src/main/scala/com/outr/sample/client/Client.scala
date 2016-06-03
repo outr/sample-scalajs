@@ -7,17 +7,17 @@ import com.outr.scribe.Logging
 import scala.scalajs.js.JSApp
 import scala.util.{Failure, Success}
 import org.scalajs.dom._
-import org.scalajs.dom.raw.{HTMLButtonElement, HTMLInputElement, HTMLTextAreaElement}
+import org.scalajs.dom.html
 
 import scala.scalajs.concurrent.JSExecutionContext.Implicits.queue
 
 object Client extends JSApp with Logging {
   lazy val services = ClientServices[Services]
 
-  lazy val reverseInput = document.getElementById("reverseInput").asInstanceOf[HTMLInputElement]
-  lazy val reversed = document.getElementById("reversed").asInstanceOf[HTMLInputElement]
-  lazy val history = document.getElementById("history").asInstanceOf[HTMLTextAreaElement]
-  lazy val loadHistoryButton = document.getElementById("loadHistoryButton").asInstanceOf[HTMLButtonElement]
+  lazy val reverseInput = tagById[html.Input]("reverseInput")
+  lazy val reversed = tagById[html.Input]("reversed")
+  lazy val history = tagById[html.TextArea]("history")
+  lazy val loadHistoryButton = tagById[html.Button]("loadHistoryButton")
 
   override def main(): Unit = {
     logger.info("Scala.js client started...")
@@ -44,4 +44,6 @@ object Client extends JSApp with Logging {
       case Failure(t) => logger.error(s"Server failure while loading history: ${t.getMessage}.")
     }
   }
+
+  def tagById[E <: Element](id: String): E = document.getElementById(id).asInstanceOf[E]
 }
