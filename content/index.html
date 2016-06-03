@@ -1,6 +1,15 @@
 <html>
 <head>
     <title>Sample Scala.js Application</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        label {
+            font-weight: bold;
+            vertical-align: top;
+        }
+    </style>
 </head>
 <body>
 <h2>Sample Usage of Scala.js, Spray, uPickle, and Autowire</h2>
@@ -9,10 +18,14 @@
     <input id="reverseInput"/>
     <input id="reversed" readonly="readonly"/>
 </div>
+<hr/>
 <div>
     <label for="history">History Service:</label>
-    <textarea id="history">No History Loaded</textarea>
-    <button id="loadHistoryButton">Load History</button>
+    <ul>
+        <textarea id="history" cols="50" rows="15">No History Loaded</textarea>
+        <br/>
+        <button id="loadHistoryButton">Load History</button>
+    </ul>
 </div>
 
 <script type="text/javascript" src="app/sample-client-jsdeps.js"></script>

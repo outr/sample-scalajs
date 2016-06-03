@@ -15,5 +15,5 @@ object ServicesImplementation extends Services {
     message.reverse
   }
 
-  override def history(max: Int): String = history.toList.take(max).mkString("\n")
+  override def history(max: Int): List[String] = history.toList.takeRight(max).reverse
 }

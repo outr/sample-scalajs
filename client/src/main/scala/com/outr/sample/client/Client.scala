@@ -40,7 +40,7 @@ object Client extends JSApp with Logging {
 
   def loadHistory(): Unit = {
     services.history(10).call().onComplete {
-      case Success(response) => history.value = response
+      case Success(response) => history.value = response.mkString("\n")
       case Failure(t) => logger.error(s"Server failure while loading history: ${t.getMessage}.")
     }
   }

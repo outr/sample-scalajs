@@ -1246,6 +1246,14 @@ function $s_Lupickle_Implicits$class__$$init$__Lupickle_Implicits__V($$this) {
   var src$9 = new $c_Lsourcecode_Enclosing().init___T("upickle.Implicits#DurationR");
   $$this.DurationR$1 = new $c_Lupickle_Types$Reader$$anon$4().init___Lupickle_Types$Reader$__s_PartialFunction__Lsourcecode_Enclosing(this$46, _read$6, src$9)
 }
+function $s_Lupickle_Implicits$class__SeqishR__Lupickle_Implicits__scg_CanBuildFrom__Lupickle_Types$Reader__Lupickle_Types$Reader($$this, cbf, r) {
+  var this$2 = $$this.Aliases__Lupickle_Types$Aliases$().R$1;
+  var this$1 = $$this.Internal__Lupickle_Implicits$Internal$();
+  var pf = new $c_Lupickle_Implicits$$anonfun$SeqishR$1().init___Lupickle_Implicits__scg_CanBuildFrom__Lupickle_Types$Reader($$this, cbf, r);
+  var _read = new $c_Lupickle_Implicits$Internal$$anon$1().init___Lupickle_Implicits$Internal$__T__s_PartialFunction(this$1, "Array(n)", pf);
+  var src = new $c_Lsourcecode_Enclosing().init___T("upickle.Implicits#SeqishR");
+  return new $c_Lupickle_Types$Reader$$anon$4().init___Lupickle_Types$Reader$__s_PartialFunction__Lsourcecode_Enclosing(this$2, _read, src)
+}
 function $s_Lupickle_Implicits$class__upickle$Implicits$$NumericStringReadWriter__Lupickle_Implicits__F1__Lupickle_Types$Writer($$this, func) {
   var this$1 = $$this.Aliases__Lupickle_Types$Aliases$().RW$1;
   var _write = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$2) {
@@ -7825,18 +7833,17 @@ $c_Lcom_outr_sample_client_Client$.prototype.reverseInput$lzycompute__p1__Lorg_s
   };
   return this.reverseInput$1
 });
-$c_Lcom_outr_sample_client_Client$.prototype.reverseMessage__T__V = (function(message) {
-  /*<skip>*/
+$c_Lcom_outr_sample_client_Client$.prototype.reversed__Lorg_scalajs_dom_raw_HTMLInputElement = (function() {
+  return (((4 & this.bitmap$0$1) === 0) ? this.reversed$lzycompute__p1__Lorg_scalajs_dom_raw_HTMLInputElement() : this.reversed$1)
 });
-$c_Lcom_outr_sample_client_Client$.prototype.loadHistory__V = (function() {
+$c_Lcom_outr_sample_client_Client$.prototype.reverseMessage__T__V = (function(message) {
   var jsx$2 = this.services__Lautowire_ClientProxy().self$1;
-  var jsx$1 = $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["com", "outr", "sample", "Services", "history"])));
+  var jsx$1 = $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["com", "outr", "sample", "Services", "reverse"])));
   this.services__Lautowire_ClientProxy();
-  var evidence$2 = $m_Lupickle_default$().IntRW$1;
-  var evidence$2$1 = $as_Lupickle_Types$Writer(evidence$2);
+  var evidence$2 = $m_Lupickle_default$().StringRW$1;
   var this$3 = $m_Lupickle_default$();
-  var y = $s_Lupickle_Types$class__writeJs__Lupickle_Types__O__Lupickle_Types$Writer__Lupickle_Js$Value(this$3, 10, evidence$2$1);
-  var array = [new $c_T2().init___O__O("max", y)];
+  var y = $s_Lupickle_Types$class__writeJs__Lupickle_Types__O__Lupickle_Types$Writer__Lupickle_Js$Value(this$3, message, evidence$2);
+  var array = [new $c_T2().init___O__O("message", y)];
   var this$6 = new $c_scm_MapBuilder().init___sc_GenMap($m_sci_Map$EmptyMap$());
   var i = 0;
   var len = $uI(array.length);
@@ -7856,7 +7863,40 @@ $c_Lcom_outr_sample_client_Client$.prototype.loadHistory__V = (function() {
     return $as_T($s_Lupickle_Types$class__readJs__Lupickle_Types__Lupickle_Js$Value__Lupickle_Types$Reader__O(this$8, x$1, evidence$1$1))
   }));
   var executor = $m_sjs_concurrent_JSExecutionContext$Implicits$().queue$1;
-  $s_s_concurrent_Future$class__map__s_concurrent_Future__F1__s_concurrent_ExecutionContext__s_concurrent_Future(this$9, f, executor).onComplete__F1__s_concurrent_ExecutionContext__V(new $c_Lcom_outr_sample_client_Client$$anonfun$loadHistory$2().init___(), $m_sjs_concurrent_JSExecutionContext$Implicits$().queue$1)
+  $s_s_concurrent_Future$class__map__s_concurrent_Future__F1__s_concurrent_ExecutionContext__s_concurrent_Future(this$9, f, executor).onComplete__F1__s_concurrent_ExecutionContext__V(new $c_Lcom_outr_sample_client_Client$$anonfun$reverseMessage$2().init___(), $m_sjs_concurrent_JSExecutionContext$Implicits$().queue$1)
+});
+$c_Lcom_outr_sample_client_Client$.prototype.loadHistory__V = (function() {
+  var jsx$2 = this.services__Lautowire_ClientProxy().self$1;
+  var jsx$1 = $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["com", "outr", "sample", "Services", "history"])));
+  this.services__Lautowire_ClientProxy();
+  var evidence$2 = $m_Lupickle_default$().IntRW$1;
+  var evidence$2$1 = $as_Lupickle_Types$Writer(evidence$2);
+  var this$3 = $m_Lupickle_default$();
+  var y = $s_Lupickle_Types$class__writeJs__Lupickle_Types__O__Lupickle_Types$Writer__Lupickle_Js$Value(this$3, 10, evidence$2$1);
+  var array = [new $c_T2().init___O__O("max", y)];
+  var this$6 = new $c_scm_MapBuilder().init___sc_GenMap($m_sci_Map$EmptyMap$());
+  var i = 0;
+  var len = $uI(array.length);
+  while ((i < len)) {
+    var index = i;
+    var arg1 = array[index];
+    this$6.$$plus$eq__T2__scm_MapBuilder($as_T2(arg1));
+    i = ((1 + i) | 0)
+  };
+  var this$11 = jsx$2.doCall__Lautowire_Core$Request__s_concurrent_Future(new $c_Lautowire_Core$Request().init___sc_Seq__sci_Map(jsx$1, $as_sci_Map(this$6.elems$1)));
+  var f = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$2$2) {
+    var x$2 = $as_Lupickle_Js$Value(x$2$2);
+    $m_Lcom_outr_sample_client_Client$().services__Lautowire_ClientProxy();
+    var this$8 = $m_Lupickle_default$();
+    var this$7 = $m_sci_List$();
+    var cbf = this$7.ReusableCBFInstance$2;
+    var r = $as_Lupickle_Types$Reader($m_Lupickle_default$().StringRW$1);
+    var evidence$1 = $s_Lupickle_Implicits$class__SeqishR__Lupickle_Implicits__scg_CanBuildFrom__Lupickle_Types$Reader__Lupickle_Types$Reader(this$8, cbf, r);
+    var this$10 = $m_Lupickle_default$();
+    return $as_sci_List($s_Lupickle_Types$class__readJs__Lupickle_Types__Lupickle_Js$Value__Lupickle_Types$Reader__O(this$10, x$2, evidence$1))
+  }));
+  var executor = $m_sjs_concurrent_JSExecutionContext$Implicits$().queue$1;
+  $s_s_concurrent_Future$class__map__s_concurrent_Future__F1__s_concurrent_ExecutionContext__s_concurrent_Future(this$11, f, executor).onComplete__F1__s_concurrent_ExecutionContext__V(new $c_Lcom_outr_sample_client_Client$$anonfun$loadHistory$2().init___(), $m_sjs_concurrent_JSExecutionContext$Implicits$().queue$1)
 });
 $c_Lcom_outr_sample_client_Client$.prototype.loadHistoryButton$lzycompute__p1__Lorg_scalajs_dom_raw_HTMLButtonElement = (function() {
   if (((16 & this.bitmap$0$1) === 0)) {
@@ -7875,6 +7915,13 @@ $c_Lcom_outr_sample_client_Client$.prototype.main__V = (function() {
   this.loadHistoryButton__Lorg_scalajs_dom_raw_HTMLButtonElement().addEventListener("click", (function(evt$2$1) {
     $m_Lcom_outr_sample_client_Client$().loadHistory__V()
   }), true)
+});
+$c_Lcom_outr_sample_client_Client$.prototype.reversed$lzycompute__p1__Lorg_scalajs_dom_raw_HTMLInputElement = (function() {
+  if (((4 & this.bitmap$0$1) === 0)) {
+    this.reversed$1 = $m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().getElementById("reversed");
+    this.bitmap$0$1 = (4 | this.bitmap$0$1)
+  };
+  return this.reversed$1
 });
 $c_Lcom_outr_sample_client_Client$.prototype.loadHistoryButton__Lorg_scalajs_dom_raw_HTMLButtonElement = (function() {
   return (((16 & this.bitmap$0$1) === 0) ? this.loadHistoryButton$lzycompute__p1__Lorg_scalajs_dom_raw_HTMLButtonElement() : this.loadHistoryButton$1)
@@ -13381,21 +13428,21 @@ $c_Lcom_outr_sample_client_Client$$anonfun$loadHistory$2.prototype.init___ = (fu
 $c_Lcom_outr_sample_client_Client$$anonfun$loadHistory$2.prototype.apply__O__O = (function(v1) {
   this.apply__s_util_Try__V($as_s_util_Try(v1))
 });
-$c_Lcom_outr_sample_client_Client$$anonfun$loadHistory$2.prototype.apply__s_util_Try__V = (function(x0$1) {
-  if ($is_s_util_Success(x0$1)) {
-    var x2 = $as_s_util_Success(x0$1);
-    var response = $as_T(x2.value$2);
-    $m_Lcom_outr_sample_client_Client$().history__Lorg_scalajs_dom_raw_HTMLTextAreaElement().value = response
-  } else if ($is_s_util_Failure(x0$1)) {
-    var x3 = $as_s_util_Failure(x0$1);
+$c_Lcom_outr_sample_client_Client$$anonfun$loadHistory$2.prototype.apply__s_util_Try__V = (function(x0$2) {
+  if ($is_s_util_Success(x0$2)) {
+    var x2 = $as_s_util_Success(x0$2);
+    var response = $as_sci_List(x2.value$2);
+    $m_Lcom_outr_sample_client_Client$().history__Lorg_scalajs_dom_raw_HTMLTextAreaElement().value = $s_sc_TraversableOnce$class__mkString__sc_TraversableOnce__T__T__T__T(response, "", "\n", "")
+  } else if ($is_s_util_Failure(x0$2)) {
+    var x3 = $as_s_util_Failure(x0$2);
     var t = x3.exception$2;
-    $m_Lcom_outr_sample_client_Client$().logger$1.log__Lcom_outr_scribe_Level__F0__s_Option__I__V($m_Lcom_outr_scribe_Level$().Error$1, new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(t$1) {
+    $m_Lcom_outr_sample_client_Client$().logger$1.log__Lcom_outr_scribe_Level__F0__s_Option__I__V($m_Lcom_outr_scribe_Level$().Error$1, new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(t$2) {
       return (function() {
-        return new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["Server failure while loading history: ", "."])).s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array([t$1.getMessage__T()]))
+        return new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["Server failure while loading history: ", "."])).s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array([t$2.getMessage__T()]))
       })
     })(t)), new $c_s_Some().init___O("$anonfun"), 44)
   } else {
-    throw new $c_s_MatchError().init___O(x0$1)
+    throw new $c_s_MatchError().init___O(x0$2)
   }
 });
 var $d_Lcom_outr_sample_client_Client$$anonfun$loadHistory$2 = new $TypeData().initClass({
@@ -13409,6 +13456,51 @@ var $d_Lcom_outr_sample_client_Client$$anonfun$loadHistory$2 = new $TypeData().i
   Ljava_io_Serializable: 1
 });
 $c_Lcom_outr_sample_client_Client$$anonfun$loadHistory$2.prototype.$classData = $d_Lcom_outr_sample_client_Client$$anonfun$loadHistory$2;
+/** @constructor */
+function $c_Lcom_outr_sample_client_Client$$anonfun$reverseMessage$2() {
+  $c_sr_AbstractFunction1.call(this)
+}
+$c_Lcom_outr_sample_client_Client$$anonfun$reverseMessage$2.prototype = new $h_sr_AbstractFunction1();
+$c_Lcom_outr_sample_client_Client$$anonfun$reverseMessage$2.prototype.constructor = $c_Lcom_outr_sample_client_Client$$anonfun$reverseMessage$2;
+/** @constructor */
+function $h_Lcom_outr_sample_client_Client$$anonfun$reverseMessage$2() {
+  /*<skip>*/
+}
+$h_Lcom_outr_sample_client_Client$$anonfun$reverseMessage$2.prototype = $c_Lcom_outr_sample_client_Client$$anonfun$reverseMessage$2.prototype;
+$c_Lcom_outr_sample_client_Client$$anonfun$reverseMessage$2.prototype.init___ = (function() {
+  return this
+});
+$c_Lcom_outr_sample_client_Client$$anonfun$reverseMessage$2.prototype.apply__O__O = (function(v1) {
+  this.apply__s_util_Try__V($as_s_util_Try(v1))
+});
+$c_Lcom_outr_sample_client_Client$$anonfun$reverseMessage$2.prototype.apply__s_util_Try__V = (function(x0$1) {
+  if ($is_s_util_Success(x0$1)) {
+    var x2 = $as_s_util_Success(x0$1);
+    var response = $as_T(x2.value$2);
+    $m_Lcom_outr_sample_client_Client$().reversed__Lorg_scalajs_dom_raw_HTMLInputElement().value = response
+  } else if ($is_s_util_Failure(x0$1)) {
+    var x3 = $as_s_util_Failure(x0$1);
+    var t = x3.exception$2;
+    $m_Lcom_outr_sample_client_Client$().logger$1.log__Lcom_outr_scribe_Level__F0__s_Option__I__V($m_Lcom_outr_scribe_Level$().Error$1, new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(t$1) {
+      return (function() {
+        return new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["Server failure while reversing message: ", "."])).s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array([t$1.getMessage__T()]))
+      })
+    })(t)), new $c_s_Some().init___O("$anonfun"), 37)
+  } else {
+    throw new $c_s_MatchError().init___O(x0$1)
+  }
+});
+var $d_Lcom_outr_sample_client_Client$$anonfun$reverseMessage$2 = new $TypeData().initClass({
+  Lcom_outr_sample_client_Client$$anonfun$reverseMessage$2: 0
+}, false, "com.outr.sample.client.Client$$anonfun$reverseMessage$2", {
+  Lcom_outr_sample_client_Client$$anonfun$reverseMessage$2: 1,
+  sr_AbstractFunction1: 1,
+  O: 1,
+  F1: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lcom_outr_sample_client_Client$$anonfun$reverseMessage$2.prototype.$classData = $d_Lcom_outr_sample_client_Client$$anonfun$reverseMessage$2;
 /** @constructor */
 function $c_Lcom_outr_scribe_Level() {
   $c_O.call(this);
@@ -16541,6 +16633,70 @@ var $d_Lupickle_Implicits$$anonfun$9 = new $TypeData().initClass({
 });
 $c_Lupickle_Implicits$$anonfun$9.prototype.$classData = $d_Lupickle_Implicits$$anonfun$9;
 /** @constructor */
+function $c_Lupickle_Implicits$$anonfun$SeqishR$1() {
+  $c_sr_AbstractPartialFunction.call(this);
+  this.$$outer$2 = null;
+  this.cbf$1$2 = null;
+  this.r$3$f = null
+}
+$c_Lupickle_Implicits$$anonfun$SeqishR$1.prototype = new $h_sr_AbstractPartialFunction();
+$c_Lupickle_Implicits$$anonfun$SeqishR$1.prototype.constructor = $c_Lupickle_Implicits$$anonfun$SeqishR$1;
+/** @constructor */
+function $h_Lupickle_Implicits$$anonfun$SeqishR$1() {
+  /*<skip>*/
+}
+$h_Lupickle_Implicits$$anonfun$SeqishR$1.prototype = $c_Lupickle_Implicits$$anonfun$SeqishR$1.prototype;
+$c_Lupickle_Implicits$$anonfun$SeqishR$1.prototype.init___Lupickle_Implicits__scg_CanBuildFrom__Lupickle_Types$Reader = (function($$outer, cbf$1, r$3) {
+  if (($$outer === null)) {
+    throw $m_sjsr_package$().unwrapJavaScriptException__jl_Throwable__O(null)
+  } else {
+    this.$$outer$2 = $$outer
+  };
+  this.cbf$1$2 = cbf$1;
+  this.r$3$f = r$3;
+  return this
+});
+$c_Lupickle_Implicits$$anonfun$SeqishR$1.prototype.applyOrElse__Lupickle_Js$Value__F1__O = (function(x12, $default) {
+  if ($is_Lupickle_Js$Arr(x12)) {
+    var x2 = ((x12 === null) ? null : $as_Lupickle_Js$Arr(x12).value$1);
+    var jsx$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(arg$outer) {
+      return (function(expr$2) {
+        var expr = $as_Lupickle_Js$Value(expr$2);
+        var this$1 = arg$outer.$$outer$2;
+        var evidence$4 = arg$outer.r$3$f;
+        return $s_Lupickle_Types$class__readJs__Lupickle_Types__Lupickle_Js$Value__Lupickle_Types$Reader__O(this$1, expr, evidence$4)
+      })
+    })(this));
+    var this$2 = $m_sc_Seq$();
+    var this$3 = $as_sc_TraversableLike(x2.map__F1__scg_CanBuildFrom__O(jsx$1, this$2.ReusableCBFInstance$2));
+    var cbf = this.cbf$1$2;
+    return $s_sc_TraversableLike$class__to__sc_TraversableLike__scg_CanBuildFrom__O(this$3, cbf)
+  } else {
+    return $default.apply__O__O(x12)
+  }
+});
+$c_Lupickle_Implicits$$anonfun$SeqishR$1.prototype.isDefinedAt__O__Z = (function(x) {
+  return this.isDefinedAt__Lupickle_Js$Value__Z($as_Lupickle_Js$Value(x))
+});
+$c_Lupickle_Implicits$$anonfun$SeqishR$1.prototype.applyOrElse__O__F1__O = (function(x, $default) {
+  return this.applyOrElse__Lupickle_Js$Value__F1__O($as_Lupickle_Js$Value(x), $default)
+});
+$c_Lupickle_Implicits$$anonfun$SeqishR$1.prototype.isDefinedAt__Lupickle_Js$Value__Z = (function(x12) {
+  return $is_Lupickle_Js$Arr(x12)
+});
+var $d_Lupickle_Implicits$$anonfun$SeqishR$1 = new $TypeData().initClass({
+  Lupickle_Implicits$$anonfun$SeqishR$1: 0
+}, false, "upickle.Implicits$$anonfun$SeqishR$1", {
+  Lupickle_Implicits$$anonfun$SeqishR$1: 1,
+  sr_AbstractPartialFunction: 1,
+  O: 1,
+  F1: 1,
+  s_PartialFunction: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lupickle_Implicits$$anonfun$SeqishR$1.prototype.$classData = $d_Lupickle_Implicits$$anonfun$SeqishR$1;
+/** @constructor */
 function $c_Lupickle_Implicits$$anonfun$upickle$Implicits$$numericReaderFunc$1() {
   $c_sr_AbstractPartialFunction.call(this);
   this.func$2$2 = null;
@@ -17768,6 +17924,18 @@ var $d_s_util_Success = new $TypeData().initClass({
   Ljava_io_Serializable: 1
 });
 $c_s_util_Success.prototype.$classData = $d_s_util_Success;
+function $is_sc_TraversableLike(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.sc_TraversableLike)))
+}
+function $as_sc_TraversableLike(obj) {
+  return (($is_sc_TraversableLike(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "scala.collection.TraversableLike"))
+}
+function $isArrayOf_sc_TraversableLike(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.sc_TraversableLike)))
+}
+function $asArrayOf_sc_TraversableLike(obj, depth) {
+  return (($isArrayOf_sc_TraversableLike(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lscala.collection.TraversableLike;", depth))
+}
 /** @constructor */
 function $c_scg_SeqFactory() {
   $c_scg_GenSeqFactory.call(this)
